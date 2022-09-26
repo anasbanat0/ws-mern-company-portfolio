@@ -3,61 +3,49 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: 'Lato', sans-serif;
 }
-
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
-
 .container {
-  width: 1256px;
+  width: 1199px;
   max-width: 100%;
   margin: 0 auto
 }
-
 img {
   display: block;
 }
-
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-
 nav ul {
   display: flex;
   column-gap: 30px;
 }
-
 nav > ul > li > a {
   color: #707070;
   transition: all .4s;
 }
-
 nav > ul > li > a:hover {
   color: #037cff;
 }
-
 nav div a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 nav div img {
   width: 40px;
   padding: 10px 0;
 }
-
 nav div span {
   color: #037cff;
   font-size: 23px;
@@ -86,20 +74,17 @@ header section img {
   align-items: center;
   padding: 80px 0;
 }
-
 .about-me .about-me-image {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
 }
-
 .about-me .about-me-image img {
   width: 100%;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-
 .about-me .about-me-desc {
   display: flex;
   flex-direction: column;
@@ -108,31 +93,26 @@ header section img {
   padding: 0 50px;
   text-align: justify;
 }
-
 .about-me .about-me-desc h2 {
   font-size: 25px;
   margin-bottom: 20px;
 }
-
 .about-me .about-me-desc p {
   font-size: 20px;
   margin-bottom: 20px;
   letter-spacing: 1.1px;
   line-height: 24px;
 }
-
 .portfolio {
   background-color: #f8f8f8;
   padding: 50px 0;
 }
-
 .portfolio article {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .portfolio article h2 {
   font-size: 50px;
   font-weight: bold;
@@ -196,4 +176,316 @@ footer {
   color: white;
   padding: 15px 0;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+  nav ul {
+    column-gap: 15px;
+  }
+  nav > ul > li > a {
+    font-size: 15px;
+  }
+  nav div img {
+    width: 30px;
+  }
+  nav div span {
+    font-size: 20px;
+  }
+  header section {
+    padding: 40px 0;
+    row-gap: 10px;
+    font-size: 16px;
+  }
+  header section img {
+    width: 140px;
+    height: 140px;
+  }
+  .about-me {
+    flex-direction: column-reverse;
+    padding: 30px 0;
+  } 
+  .about-me .about-me-desc {
+    padding: 0;
+    text-align: justify;
+  }
+  .about-me .about-me-desc h2 {
+    font-size: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #707070;
+  }
+  .about-me .about-me-desc p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+  .portfolio {
+    padding: 20px 0;
+  }  
+  .portfolio article h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .portfolio > article > section {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .portfolio > article > section > .card {
+    row-gap: 10px;
+  }
+  .portfolio section .card p {
+    padding: 0 20px 15px;
+  }
+  .contact article {
+    padding: 30px 0;
+  }
+  .contact article h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .contact > article > .section {
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-start;
+    padding: 0 0 0 30px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+  nav ul {
+    column-gap: 17px;
+  }
+  nav > ul > li > a {
+    font-size: 16px;
+  }
+  nav div img {
+    width: 35px;
+  }
+  nav div span {
+    font-size: 21px;
+  }
+  header section {
+    padding: 40px 0;
+    row-gap: 10px;
+    font-size: 17px;
+  }
+  header section img {
+    width: 150px;
+    height: 150px;
+  }
+  .about-me {
+    flex-direction: column-reverse;
+    padding: 30px 0;
+  } 
+  .about-me .about-me-desc {
+    padding: 0;
+    text-align: justify;
+  }
+  .about-me .about-me-desc h2 {
+    font-size: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #707070;
+  }
+  .about-me .about-me-desc p {
+    font-size: 17px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 22px;
+  }
+  .portfolio {
+    padding: 20px 0;
+  }  
+  .portfolio article h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .portfolio article p {
+    font-size: 18px;
+  }
+  .portfolio > article > section {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .portfolio > article > section > .card {
+    row-gap: 10px;
+  }
+  .portfolio section .card p {
+    padding: 0 20px 15px;
+  }
+  .contact article {
+    padding: 30px 0;
+  }
+  .contact article h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .contact > article > .section {
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-start;
+    padding: 0 0 0 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+  nav ul {
+    column-gap: 20px;
+  }
+  nav > ul > li > a {
+    font-size: 18px;
+  }
+  nav div img {
+    width: 35px;
+  }
+  nav div span {
+    font-size: 22px;
+  }
+  header section {
+    padding: 40px 0;
+    row-gap: 10px;
+    font-size: 18px;
+  }
+  header section img {
+    width: 160px;
+    height: 160px;
+  }
+  .about-me {
+    flex-direction: column-reverse;
+    padding: 30px 0;
+  } 
+  .about-me .about-me-desc {
+    padding: 0;
+    text-align: justify;
+  }
+  .about-me .about-me-desc h2 {
+    font-size: 23px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #707070;
+  }
+  .about-me .about-me-desc p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 23px;
+  }
+  .portfolio {
+    padding: 20px 0;
+  }  
+  .portfolio article h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .portfolio > article > section {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .portfolio > article > section > .card {
+    row-gap: 10px;
+  }
+  .portfolio section .card h3 {
+    font-size: 22px;
+  }
+  .portfolio section .card p {
+    padding: 0 20px 15px;
+    font-size: 18px;
+  }
+  .contact article {
+    padding: 30px 0;
+  }
+  .contact article h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .contact > article > .section {
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-start;
+    padding: 0 0 0 30px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    width: 90%;
+  }
+  nav ul {
+    column-gap: 20px;
+  }
+  nav > ul > li > a {
+    font-size: 18px;
+  }
+  nav div img {
+    width: 35px;
+  }
+  nav div span {
+    font-size: 22px;
+  }
+  header section {
+    padding: 40px 0;
+    row-gap: 10px;
+    font-size: 18px;
+  }
+  header section img {
+    width: 160px;
+    height: 160px;
+  }
+  .about-me {
+    flex-direction: row;
+    padding: 30px 0;
+  }
+  .about-me .about-me-image img {
+    width: 90%;
+  }
+  .about-me .about-me-desc {
+    padding: 0 20px;
+  }
+  .about-me .about-me-desc h2 {
+    font-size: 23px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #707070;
+  }
+  .about-me .about-me-desc p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 23px;
+  }
+  .portfolio {
+    padding: 20px 0;
+  }  
+  .portfolio article h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .portfolio > article > section {
+    flex-direction: row;
+  }
+  .portfolio > article > section > .card {
+    row-gap: 10px;
+  }
+  .portfolio section .card h3 {
+    font-size: 20px;
+  }
+  .portfolio section .card p {
+    padding: 0 20px 15px;
+    font-size: 16px;
+  }
+  .contact article {
+    padding: 30px 0;
+  }
+  .contact article h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+  .contact > article > .section {
+    flex-direction: row;
+    width: 100%;
+  }
 }
